@@ -57,7 +57,7 @@ export default function Home() {
       >
         Create Job
       </button>
-      <ResultTable getData={getData} />
+      <ResultTable getData={getData} error={error} />
       {showModal && (
         <Modal
           modalRef={modalRef}

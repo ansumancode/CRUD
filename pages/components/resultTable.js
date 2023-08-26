@@ -5,7 +5,7 @@ import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 import EditModal from "./editModal";
 import { updateFormData, deleteFormData } from "../api/api";
 
-const ResultTable = ({ getData }) => {
+const ResultTable = ({ getData, error }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedData, setSelectedData] = useState(null);
   const btnRef = useRef();
@@ -146,6 +146,7 @@ const ResultTable = ({ getData }) => {
                   setShowModal={setShowModal}
                   selectedData={selectedData}
                   onSubmit={editHandleModalSubmit}
+                  error={error}
                 />
               )}
             </div>
