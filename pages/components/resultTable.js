@@ -47,6 +47,8 @@ const ResultTable = ({ getData }) => {
     });
   }
 
+ 
+
   return (
     <div className="container my-10">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 justify-center">
@@ -111,10 +113,10 @@ const ResultTable = ({ getData }) => {
                     {allData.picked ? (
                       <button
                         className={` ${
-                          allData.picked == "External apply"
+                          allData.picked === "External apply"
                             ? "bg-white border border-blue-600 text-blue-500 hover:bg-gray-200"
-                            : "bg-blue-500 hover:bg-blue-700"
-                        }  text-white  py-2 px-4 rounded`}
+                            : "bg-blue-500 hover:bg-blue-700 text-white"
+                        }    py-2 px-4 rounded`}
                       >
                         {allData.picked}
                       </button>

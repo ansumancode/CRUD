@@ -5,17 +5,17 @@ import EditStapeTwoForm from "./editStepTwoForm";
 
 const EditModal = ({ modalRef, onSubmit, selectedData }) => {
   const [data, setData] = useState({
-    jobTitle: `${selectedData.jobTitle}`,
-    company: `${selectedData.company}`,
-    industry: `${selectedData.industry}`,
-    location: `${selectedData.location}`,
-    RemoteType: `${selectedData.RemoteType}`,
-    MinimumExperience: `${selectedData.MinimumExperience}`,
-    MaximumExperience: `${selectedData.MaximumExperience}`,
-    MinimumSalary: `${selectedData.MinimumSalary}`,
-    MaximumSalary: `${selectedData.MaximumSalary}`,
-    TotalEmployee: `${selectedData.TotalEmployee}`,
-    picked: `${selectedData.picked}`,
+    jobTitle: `${selectedData?.jobTitle}`,
+    company: `${selectedData?.company}`,
+    industry: `${selectedData?.industry}`,
+    location: `${selectedData?.location}`,
+    RemoteType: `${selectedData?.RemoteType}`,
+    MinimumExperience: `${selectedData?.MinimumExperience}`,
+    MaximumExperience: `${selectedData?.MaximumExperience}`,
+    MinimumSalary: `${selectedData?.MinimumSalary}`,
+    MaximumSalary: `${selectedData?.MaximumSalary}`,
+    TotalEmployee: `${selectedData?.TotalEmployee}`,
+    picked: `${selectedData?.picked}`,
   });
 
   const [currentStep, setCurrentStep] = useState(0);
