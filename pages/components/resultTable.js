@@ -63,7 +63,7 @@ const ResultTable = ({ getData, error }) => {
                   <div className="relative">
                     <Image src="/img.png" width={48} height={48} alt="img" />
                   </div>
-                  <div className="ml-2 w-301">
+                  <div className="ml-2 md:w-301">
                     <div className="mb-6">
                       <h2 className="font-normal text-2xl leading-none text-black">
                         {allData.jobTitle}
@@ -124,7 +124,7 @@ const ResultTable = ({ getData, error }) => {
                   </div>
                 </div>
 
-                <div className="flex justify-end items-center absolute right-4 mr-2">
+                <div className="flex justify-end items-center absolute right-4 mr-2 md:top-5 top-1 ">
                   <div
                     className="pl-2 cursor-pointer text-blue-600"
                     onClick={() => handelClick(allData)}
